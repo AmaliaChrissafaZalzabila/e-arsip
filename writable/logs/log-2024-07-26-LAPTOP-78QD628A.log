@@ -1,0 +1,12 @@
+CRITICAL - 2024-07-26 09:17:39 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: /]
+in SYSTEMPATH\Cookie\CloneableCookieInterface.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-26 09:31:32 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: /]
+in SYSTEMPATH\ThirdParty\Kint\CallFinder.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-26 09:41:08 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: /]
+in SYSTEMPATH\ThirdParty\Kint\Renderer\Rich\MicrotimePlugin.php on line 68.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

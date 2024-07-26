@@ -1,0 +1,261 @@
+CRITICAL - 2024-07-26 09:36:54 --> ErrorException: unlink(C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\writable\debugbar/debugbar_1721920844.751324.json): No such file or directory
+[Method: GET, Route: /]
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\Users\\User\\OneDrive\\MAGANG UNIPMA\\CODING\\DEVELOPMENT\\e-arsip\\writable\\debugbar/debugbar_1721920844.751324.json): No such file or directory', 'C:\\Users\\User\\OneDrive\\MAGANG UNIPMA\\CODING\\DEVELOPMENT\\e-arsip\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar\\Collectors\\History.php', 82)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(82): unlink('C:\\Users\\User\\OneDrive\\MAGANG UNIPMA\\CODING\\DEVELOPMENT\\e-arsip\\writable\\debugbar/debugbar_1721920844.751324.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(518): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1721961401.655881', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\User\\OneDrive\\MAGANG UNIPMA\\CODING\\DEVELOPMENT\\e-arsip\\public\\index.php')
+ERROR - 2024-07-26 09:50:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4arsip', 5758, '', 0)
+#1 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1471): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1490): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1471): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1490): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#10 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-26 04:54:53 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-07-26 04:55:02 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-26 04:55:27 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-07-26 04:55:27 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-26 04:55:36 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-07-26 04:55:36 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-07-26 09:56:07 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4arsip', 5758, '', 0)
+#1 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1471): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1490): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1471): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1490): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#10 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\Users\User\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-26 05:00:59 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-07-26 05:00:59 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-26 05:03:16 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-07-26 05:03:16 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-26 05:20:51 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-07-26 05:20:51 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-26 10:39:35 --> ErrorException: file_get_contents(): Read of 57309 bytes failed with errno=22 Invalid argument
+[Method: GET, Route: /]
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'file_get_contents(): Read of 57309 bytes failed with errno=22 Invalid argument', 'C:\\Users\\user\\OneDrive\\MAGANG UNIPMA\\CODING\\DEVELOPMENT\\e-arsip\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar\\Collectors\\History.php', 88)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(88): file_get_contents('C:\\Users\\user\\OneDrive\\MAGANG UNIPMA\\CODING\\DEVELOPMENT\\e-arsip\\writable\\debugbar/debugbar_1721964083.354327.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(518): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1721965130.774983', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\MAGANG UNIPMA\\CODING\\DEVELOPMENT\\e-arsip\\public\\index.php')
+internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\vendor\codeigniter4\framework\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\Lenovo\OneDrive\MAGANG UNIPMA\CODING\DEVELOPMENT\e-arsip\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
